@@ -81,6 +81,7 @@ const FormTodo = () => {
                         <button
                             className="btn btn-info"
                             type="submit"
+                            onClick={() => dispatch(fetchTaskData())}
                         >
                             Agregar
                         </button>

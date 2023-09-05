@@ -54,7 +54,7 @@ export const todoSlice = createSlice({
         console.log('Loading Tasks')
       })
       .addCase(fetchTaskData.fulfilled, (state, action) => {
-        console.log('Load Tasks is successfull')
+        console.log('Task load is successful')
         state.taskList = action.payload;
       })
       .addCase(fetchTaskData.rejected, (state, action) => {
